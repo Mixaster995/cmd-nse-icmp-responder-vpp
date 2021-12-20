@@ -178,7 +178,7 @@ func main() {
 					up.NewServer(ctx, vppConn),
 					connectioncontext.NewServer(vppConn),
 					tag.NewServer(ctx, vppConn),
-					memif.NewServer(ctx, vppConn, memif.NewNetNSInfo()),
+					memif.NewServer(ctx, vppConn),
 				),
 			}),
 		),
